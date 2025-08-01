@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    char estado1[50];
+    char estado1;
     char codigo1[4];
     char nomeCidade1[50];
     int populacao1;
@@ -13,7 +13,7 @@ int main(){
     printf("Desafio das cartas1: \n");
     
      printf("Digite o Estado: \n");
-    scanf(" %s", estado1);
+    scanf(" %c", &estado1);
 
     printf("Digite o Código da Carta: \n");
     scanf("%s", codigo1);
@@ -34,7 +34,7 @@ int main(){
     printf("Número de pontos turísticos: \n");
     scanf("%d", &pontosTuristicos1);
 
-    printf("Estado: %s\n",estado1);
+    printf("Estado: %c\n",estado1);
     printf("Nome da Cidade: %s\n", nomeCidade1);
     printf("Código: %s\n", codigo1);
     printf("População: %d\n", populacao1);
@@ -43,9 +43,10 @@ int main(){
     printf("Números de pontos turísticos: %d\n", pontosTuristicos1);  
 
 
-     printf(" Desafio carta 2: \n");
+    printf("Cartas2: \n");
+     
 
-    char estado2[50];
+    char estado2;
     char codigo2[4];
     char nomeCidade2[50];
     int populacao2;
@@ -54,10 +55,8 @@ int main(){
     int pontosTuristicos2;
 
 
-    printf("Desafio das cartas2: \n");
-    
      printf("Digite o Estado: \n");
-    scanf(" %s", estado2);
+    scanf(" %c", &estado2);
 
     printf("Digite o Código da Carta: \n");
     scanf("%s", codigo2);
@@ -78,7 +77,7 @@ int main(){
     printf("Número de pontos turísticos: \n");
     scanf("%d", &pontosTuristicos2);
 
-    printf("Estado: %s\n",estado2);
+    printf("Estado: %c\n",estado2);
     printf("Nome da Cidade: %s\n", nomeCidade2);
     printf("Código: %s\n", codigo2);
     printf("População: %d\n", populacao2);
