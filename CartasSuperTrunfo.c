@@ -10,7 +10,7 @@ int main(){
     int pontosTuristicos1;
 
 
-    printf("Desafio das cartas: \n");
+    printf("Desafio das cartas1: \n");
     
      printf("Digite o Estado: \n");
     scanf(" %s", estado1);
@@ -37,10 +37,59 @@ int main(){
     printf("Estado: %s\n",estado1);
     printf("Nome da Cidade: %s\n", nomeCidade1);
     printf("Código: %s\n", codigo1);
-    printf("População: %.2d Milhões\n", populacao1);
+    printf("População: %d\n", populacao1);
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Área: %.2f km²\n", area1);
     printf("Números de pontos turísticos: %d\n", pontosTuristicos1);  
+
+
+     printf(" Desafio carta 2: \n");
+
+    char estado2[50];
+    char codigo2[4];
+    char nomeCidade2[50];
+    int populacao2;
+    float area2;
+    float pib2;
+    int pontosTuristicos2;
+
+
+    printf("Desafio das cartas2: \n");
+    
+     printf("Digite o Estado: \n");
+    scanf(" %s", estado2);
+
+    printf("Digite o Código da Carta: \n");
+    scanf("%s", codigo2);
+
+    printf("Digite o Nome da Cidade: \n");
+    scanf(" %s", nomeCidade2);
+    
+    
+    printf("Digite a população: \n");
+    scanf("%d", &populacao2);
+     
+    printf("Digite o pib: \n");
+    scanf(" %f", &pib2);
+
+    printf("Digite a área: \n");
+    scanf(" %f", &area2);
+
+    printf("Número de pontos turísticos: \n");
+    scanf("%d", &pontosTuristicos2);
+
+    printf("Estado: %s\n",estado2);
+    printf("Nome da Cidade: %s\n", nomeCidade2);
+    printf("Código: %s\n", codigo2);
+    printf("População: %d\n", populacao2);
+    printf("PIB: %.2f bilhões de reais\n", pib2);
+    printf("Área: %.2f km²\n", area2);
+    printf("Números de pontos turísticos: %d\n", pontosTuristicos2);  
+
+
+
+
+
 
 
 }
