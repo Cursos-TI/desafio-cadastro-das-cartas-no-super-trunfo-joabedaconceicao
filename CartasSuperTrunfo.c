@@ -8,6 +8,8 @@ int main(){
     float area1;
     float pib1;
     int pontosTuristicos1;
+    float densidadePopulacional1;
+    float pibPerCapita1;
 
 
     printf("Desafio das cartas1: \n");
@@ -34,6 +36,15 @@ int main(){
     printf("Número de pontos turísticos: \n");
     scanf("%d", &pontosTuristicos1);
 
+    printf("Digite densidade populacional: \n");
+    scanf("%f", &densidadePopulacional1);
+
+    printf("Digite pib per capita: \n");
+    scanf("%f", &pibPerCapita1);
+     
+     resultado = (float)(populacao1 / area1) 
+     printf("A densidade populacional é: %.2f", densidade Populacional);
+
     printf("Estado: %c\n",estado1);
     printf("Nome da Cidade: %s\n", nomeCidade1);
     printf("Código: %s\n", codigo1);
@@ -41,6 +52,8 @@ int main(){
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Área: %.2f km²\n", area1);
     printf("Números de pontos turísticos: %d\n", pontosTuristicos1);  
+    printf("Densidade populacioal: %.2f km²\n", densidadePopulacional1 );
+    printf("PIB per capita: %.2f reais\n", pibPerCapita1);
 
 
     printf("Cartas2: \n");
@@ -53,6 +66,8 @@ int main(){
     float area2;
     float pib2;
     int pontosTuristicos2;
+    float densidadePopulacional2;
+    float pibPerCapita2;
 
 
      printf("Digite o Estado: \n");
@@ -77,6 +92,15 @@ int main(){
     printf("Número de pontos turísticos: \n");
     scanf("%d", &pontosTuristicos2);
 
+
+    printf("Digite densidade populacional: \n");
+    scanf("%f", &densidadePopulacional2);
+
+    printf("Digite pib per capita: \n");
+    scanf("%f", &pibPerCapita2);
+      
+
+
     printf("Estado: %c\n",estado2);
     printf("Nome da Cidade: %s\n", nomeCidade2);
     printf("Código: %s\n", codigo2);
@@ -84,8 +108,10 @@ int main(){
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Área: %.2f km²\n", area2);
     printf("Números de pontos turísticos: %d\n", pontosTuristicos2);  
-      
+    printf("Densidade populacioal: %.2f km²\n", densidadePopulacional2 );
+    printf("PIB per capita: %.2f reais\n", pibPerCapita2);
 
+    
 
     return 0;
 
