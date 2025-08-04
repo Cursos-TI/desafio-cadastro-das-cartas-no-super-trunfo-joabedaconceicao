@@ -10,7 +10,8 @@ int main(){
     int pontosTuristicos1;
     float densidadePopulacional1;
     float pibPercapita1;
-    float resultado;
+    float densidade;
+    float PIBperCapita;
 
 
      printf("Desafio das cartas1: \n");
@@ -37,14 +38,15 @@ int main(){
     printf("Número de pontos turísticos: \n");
     scanf("%d", &pontosTuristicos1);
 
-    printf("Digite densidade: \n");
-    scanf("%f", &densidadePopulacional1);
+   
 
-    printf("Digite pibPercapita1: \n");
-    scanf("%f", pibPercapita1);
+    densidade = (float)(populacao1 / area1);
+    printf("A densidade é: %.2f km²\n", densidade);
 
-    resultado = (float)(populacao1 / area1);
-    printf("o resultado é: %.1f", resultado);
+    PIBperCapita = (float)(pib1 / populacao1);
+    printf("PIB per Capita é: %.2f reais\n", PIBperCapita);
+
+
 
   
      
@@ -93,7 +95,12 @@ int main(){
     scanf("%d", &pontosTuristicos2);
 
 
-    
+     densidade = (float)(populacao2 / area2);
+    printf("A densidade é: %.2f km²\n", densidade);
+
+    PIBperCapita = (float)(pib2 / populacao2);
+    printf("PIB per Capita é: %.2f reais\n", PIBperCapita);
+
       
 
 
