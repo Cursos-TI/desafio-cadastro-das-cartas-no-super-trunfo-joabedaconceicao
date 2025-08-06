@@ -17,6 +17,7 @@ int main(){
 
 
      printf("Desafio das cartas1: \n");
+     
     
      printf("Digite o Estado: \n");
     scanf(" %c", &estado1);
