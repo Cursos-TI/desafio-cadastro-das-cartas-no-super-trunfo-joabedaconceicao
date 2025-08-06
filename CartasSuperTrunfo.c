@@ -9,7 +9,14 @@ int main(){
     float pib1;
     int pontosTuristicos1;
     float densidade1;
-    float PIBperCapita1;
+    float PIBperCapita1; 
+    float superPoder1;
+    float soma1;
+    float inversoDensidade1;
+     double resultado1;
+     float carta1;
+     float carta2;
+
 
 
      printf("Desafio das cartas1: \n");
@@ -44,6 +51,15 @@ int main(){
     PIBperCapita1 = (float)(pib1 * 1000000000.0f) / populacao1;
     printf("PIB per Capita é: %.2f reais\n", PIBperCapita1);
 
+    soma1 = (float)(populacao1 + area1 + pib1 + PIBperCapita1 + pontosTuristicos1);
+    inversoDensidade1 = (float)(area1 / populacao1);
+    printf("A soma é: %f\n", soma1);
+    printf(" O inverso da densidade é: %f\n", inversoDensidade1);
+
+    printf("carta1 > carta2: %d\n", carta1 > carta2);
+
+    printf("O resultado é: %f\n", resultado1);
+
 
 
   
@@ -70,7 +86,10 @@ int main(){
     int pontosTuristicos2;
     float densidade2;
     float PIBperCapita2;
-   
+   float soma2;
+    float inversoDensidade2;
+     double resultado2;
+     
 
      printf("Digite o Estado: \n");
     scanf(" %c", &estado2);
@@ -101,7 +120,15 @@ int main(){
     PIBperCapita2 = (float)(pib2 * 1000000000.0f) / populacao2;
     printf("PIB per Capita é: %.2f reais\n", PIBperCapita2);
 
-      
+      soma2 = (float)(populacao2 + area2 + pib2 + PIBperCapita2 + pontosTuristicos2);
+    inversoDensidade2 = (float)(area2 / populacao2);
+    printf("A soma é: %f\n", soma2);
+    printf(" O inverso da densidade é: %f\n", inversoDensidade2);
+
+    printf("carta1 > carta2: %d\n", carta1 > carta2);
+
+    printf("O resultado é: %f\n", resultado2);
+
 
 
     printf("Estado: %c\n",estado2);
