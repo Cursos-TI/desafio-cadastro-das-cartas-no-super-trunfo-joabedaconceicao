@@ -84,8 +84,7 @@ int main(){
     double superPoder2;
    float soma2;
     
-   populacao1 = 3000000;
-   populacao2 = 2000000;
+   
 
     
      
