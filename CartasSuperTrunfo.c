@@ -83,6 +83,8 @@ int main(){
     double PIBperCapita2;
     double superPoder2;
    float soma2;
+   double comparacao;
+   
     
    
 
@@ -130,6 +132,14 @@ int main(){
     printf("Comparação de Pib Per Capita (1>2): %d\n", PIBperCapita1 > PIBperCapita2);
     printf("Comparação de Super Poder  (1>2): %d\n", superPoder1 > superPoder2);
        
+          printf("comparação de cartas(atributo:população) \n");  
+
+           printf("Carta 1 - CEARÁ: \n");
+           scanf("%lu", &populacao1);
+        
+           printf("Carta 2 - Goiás: \n");
+           scanf("%lu", &populacao2);
+        
 
        if(populacao1 > populacao2){
         printf("carta 1 venceu!\n");
@@ -137,8 +147,8 @@ int main(){
        else{
         printf("carta 2 venceu!\n");
        }
-     
-        
+           
+
 
 
     
