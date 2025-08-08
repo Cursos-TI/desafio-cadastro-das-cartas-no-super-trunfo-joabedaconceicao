@@ -53,6 +53,10 @@ int main(){
     
     printf("Super Poder: %.2lf\n", superPoder1);
 
+
+  
+    
+
     
 
 
@@ -122,7 +126,14 @@ int main(){
     printf("Comparação de densidade populacional (1>2): %d\n", densidade1 > densidade2);
     printf("Comparação de Pib Per Capita (1>2): %d\n", PIBperCapita1 > PIBperCapita2);
     printf("Comparação de Super Poder  (1>2): %d\n", superPoder1 > superPoder2);
-    
+       
+
+       if(populacao1 > populacao2){
+        printf("carta 1 venceu!\n");
+       }
+       else{
+        printf("carta 2 venceu!\n");
+       }
     
 
     
