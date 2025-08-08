@@ -84,6 +84,10 @@ int main(){
     double superPoder2;
    float soma2;
     
+   populacao1 = 3000000;
+   populacao2 = 2000000;
+
+    
      
 
      printf("Digite o Estado: \n");
@@ -134,7 +138,9 @@ int main(){
        else{
         printf("carta 2 venceu!\n");
        }
-    
+     
+        
+
 
     
     
