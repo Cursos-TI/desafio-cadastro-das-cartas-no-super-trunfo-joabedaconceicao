@@ -83,7 +83,7 @@ int main(){
     double PIBperCapita2;
     double superPoder2;
    float soma2;
-   double comparacao;
+   
    
     
    
@@ -128,17 +128,11 @@ int main(){
     printf("Comparação de área (1>2): %d\n", area1 > area2);
     printf("Comparação de pib (1>2): %d\n", pib1 > pib2);
     printf("Comparação de pontos turísticos (1>2): %d\n", pontosTuristicos1 > pontosTuristicos2);
-    printf("Comparação de densidade populacional (1>2): %d\n", densidade1 > densidade2);
+    printf("Comparação de densidade populacional (1>2): %d\n", densidade1 < densidade2);
     printf("Comparação de Pib Per Capita (1>2): %d\n", PIBperCapita1 > PIBperCapita2);
     printf("Comparação de Super Poder  (1>2): %d\n", superPoder1 > superPoder2);
        
-          printf("comparação de cartas(atributo:população) \n");  
-
-           printf("Carta 1 - CEARÁ: \n");
-           scanf("%lu", &populacao1);
-        
-           printf("Carta 2 - Goiás: \n");
-           scanf("%lu", &populacao2);
+          
         
 
        if(populacao1 > populacao2){
