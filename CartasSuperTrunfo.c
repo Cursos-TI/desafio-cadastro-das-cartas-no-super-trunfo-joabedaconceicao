@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 int main(){
+  int carta1;
+  char país1[50];
     char estado1;
     char codigo1[4];
     char nomeCidade1[50];
@@ -24,7 +26,7 @@ int main(){
      
     
      printf("Digite o Estado: \n");
-    scanf(" %c", &estado1);
+    scanf(" %d", &estado1);
 
     printf("Digite o Código da Carta: \n");
     scanf("%s", codigo1);
@@ -64,7 +66,7 @@ int main(){
     
 
 
-    printf("Estado: %c\n",estado1);
+    printf("Estado: %d\n",estado1);
     printf("Nome da Cidade: %s\n", nomeCidade1);
     printf("Código: %s\n", codigo1);
     printf("População: %lu\n", populacao1);
@@ -74,10 +76,10 @@ int main(){
     
 
     printf("Cartas2: \n");
-     
-
-    char estado2;
-    char codigo2[4];
+     int carta2;
+    char país2[50];
+    char estado2[50];
+    char codigo2;
     char nomeCidade2[50];
    unsigned long int populacao2;
     double area2;
@@ -87,90 +89,83 @@ int main(){
     double PIBperCapita2;
     double superPoder2;
    float soma2;
+   
+   
+   
+  
 
-   int escolhaJogador, escolhaComputador;
-    srand(time(0));
+   
+    
 
 
 
     printf("***Comparação das cartas***\n");
-    printf("Escoha uma opção:\n");
     printf("1. Nome do país\n");
     printf("2. População\n");
     printf("3. Àrea\n");
     printf("4. PIB\n");
     printf("5. Número de pontos turísticos\n");
     printf("6. Densidade demográfica\n");
-    scanf("%d", &escolhaJogador);
+     printf("Escoha uma opção:\n");
+    scanf("%d", carta1, carta2);
 
-    escolhaComputador = rand() % 6 + 1;
+    
 
-    switch (escolhaJogador)
+    switch (carta1, carta2)
     {
     case 1:
-      printf("Jogador: Nome do país - ");
+      printf("Digite: Nome do país - ");
+
       break;
     
     case 2:
-      printf("Jogador:  - População - ");
+      printf("Digite População 1 - ");
+      scanf("%lu", &populacao1);
+      printf("Digite população 2 - ");
+      scanf("%lu", &populacao2);
       break;
     
     case 3:
-      printf("Jogador: Área - ");
+      printf("Digite Área 1 - ");
+      scanf("%f", area1);
+      printf("Digite Área 2 - ");
+      scanf("%f", &area2)
       break;
     
     case 4:
-      printf("Jogador: PIB - ");
+      printf("Digite PIB 1 - ");
+      scanf("%f", &pib1);
+      printf("Digite PIB 2 - ");
+      scanf("%f", &pib2);
       break;
     
     case 5:
-      printf("Números de pontos turísticos - ");
+      printf("Digite pontos turísticos 1 - ");
+      scanf("%d", &pontosTuristicos1);
+      printf("Digite pontos Turisticos 2 - ");
+      scanf("%d", &pontosTuristicos2);
       break;
     case 6:
-      printf("Densidade demográfica - ");
-      break;
+      printf("Digite densidade demográfica 1 - ");
+      scanf("%lf", &densidade1);
+      printf("Digite densidade demográfica 2 - ");
+      scanf("%lf", &densidade2);
+      break; 
+
+       if(carta1, carta2){
+        printf("carta 1 venceu!\n");
+       }
+       else{
+        printf("carta 2 venceu!\n");
+       }
+           
     
     default:
       printf("Opção inválida\n");
     }
 
-    switch (escolhaComputador)
-    {
-    case 1:
-      printf("computador: Nome do país\n - ");
-      break;
-    case 2:
-      printf("computador: População\n - ");
-      break;
-    case 3:
-      printf("computador: Área\n - ");
-      break;
-    case 4:
-      printf("computador: PIB\n - ");
-      break;
-    case 5:
-      printf("computador: Número de pontos turísticos\n - ");
-      break;
-    case 6:
-      printf("Densidade demográfica\n - ");
-      break;
     
-       }
 
-       if (escolhaComputador == escolhaJogador) {
-       printf(" ### Empate! ###\n");
-       } else if ((escolhaJogador == populacao1) && (escolhaComputador == populacao2) ||
-                  (escolhaJogador == area1 ) && (escolhaComputador == area2) ||
-                   (escolhaJogador == pib1) && (escolhaComputador == pib2) ||
-                   (escolhaJogador == pontosTuristicos1) && (escolhaComputador == pontosTuristicos2) ||
-                   (escolhaJogador == densidade1) && (escolhaComputador == densidade2))
-                 
-       {
-        printf("Carta 1 venceu!\n");
-        
-       } else {
-        printf("Carta 2 venceu!\n");
-       }
        
    
    
@@ -181,10 +176,10 @@ int main(){
      
 
      printf("Digite o Estado: \n");
-    scanf(" %c", &estado2);
+    scanf(" %d", &estado2);
 
     printf("Digite o Código da Carta: \n");
-    scanf("%s", codigo2);
+    scanf("%d", &codigo2);
 
     printf("Digite o Nome da Cidade: \n");
     scanf(" %49[^\n]", nomeCidade2);
@@ -240,7 +235,7 @@ int main(){
 
     printf("Estado: %c\n",estado2);
     printf("Nome da Cidade: %s\n", nomeCidade2);
-    printf("Código: %s\n", codigo2);
+    printf("Código: %d\n", codigo2);
     printf("População: %lu\n", populacao2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Área: %.2f km²\n", area2);
