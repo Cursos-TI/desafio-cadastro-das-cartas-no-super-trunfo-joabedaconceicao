@@ -13,10 +13,14 @@ int main(){
     double superPoder1;
     float soma1;
     
+       
+       
+
+    
 
 
 
-     printf("Desafio das cartas1: \n");
+     printf("cartas1: \n");
      
     
      printf("Digite o Estado: \n");
@@ -83,6 +87,91 @@ int main(){
     double PIBperCapita2;
     double superPoder2;
    float soma2;
+
+   int escolhaJogador, escolhaComputador;
+    srand(time(0));
+
+
+
+    printf("***Comparação das cartas***\n");
+    printf("Escoha uma opção:\n");
+    printf("1. Nome do país\n");
+    printf("2. População\n");
+    printf("3. Àrea\n");
+    printf("4. PIB\n");
+    printf("5. Número de pontos turísticos\n");
+    printf("6. Densidade demográfica\n");
+    scanf("%d", &escolhaJogador);
+
+    escolhaComputador = rand() % 6 + 1;
+
+    switch (escolhaJogador)
+    {
+    case 1:
+      printf("Jogador: Nome do país - ");
+      break;
+    
+    case 2:
+      printf("Jogador:  - População - ");
+      break;
+    
+    case 3:
+      printf("Jogador: Área - ");
+      break;
+    
+    case 4:
+      printf("Jogador: PIB - ");
+      break;
+    
+    case 5:
+      printf("Números de pontos turísticos - ");
+      break;
+    case 6:
+      printf("Densidade demográfica - ");
+      break;
+    
+    default:
+      printf("Opção inválida\n");
+    }
+
+    switch (escolhaComputador)
+    {
+    case 1:
+      printf("computador: Nome do país\n - ");
+      break;
+    case 2:
+      printf("computador: População\n - ");
+      break;
+    case 3:
+      printf("computador: Área\n - ");
+      break;
+    case 4:
+      printf("computador: PIB\n - ");
+      break;
+    case 5:
+      printf("computador: Número de pontos turísticos\n - ");
+      break;
+    case 6:
+      printf("Densidade demográfica\n - ");
+      break;
+    
+       }
+
+       if (escolhaComputador == escolhaJogador) {
+       printf(" ### Empate! ###\n");
+       } else if ((escolhaJogador == populacao1) && (escolhaComputador == populacao2) ||
+                  (escolhaJogador == area1 ) && (escolhaComputador == area2) ||
+                   (escolhaJogador == pib1) && (escolhaComputador == pib2) ||
+                   (escolhaJogador == pontosTuristicos1) && (escolhaComputador == pontosTuristicos2) ||
+                   (escolhaJogador == densidade1) && (escolhaComputador == densidade2))
+                 
+       {
+        printf("Carta 1 venceu!\n");
+        
+       } else {
+        printf("Carta 2 venceu!\n");
+       }
+       
    
    
     
