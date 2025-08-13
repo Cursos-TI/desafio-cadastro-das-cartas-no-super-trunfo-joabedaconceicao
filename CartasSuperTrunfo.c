@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main(){
-  int carta1;
+ 
   char país1[50];
-    char estado1;
+    char estado1[4];
     char codigo1[4];
     char nomeCidade1[50];
     unsigned long int populacao1;
@@ -29,7 +29,7 @@ int main(){
     scanf(" %d", &estado1);
 
     printf("Digite o Código da Carta: \n");
-    scanf("%s", codigo1);
+    scanf("%s", &codigo1);
 
     printf("Digite o Nome da Cidade: \n");
     scanf(" %49[^\n]", nomeCidade1);
@@ -76,19 +76,21 @@ int main(){
     
 
     printf("Cartas2: \n");
-     int carta2;
+     char carta1, carta2;
     char país2[50];
-    char estado2[50];
-    char codigo2;
+    char estado2;
+    int codigo2[4];
     char nomeCidade2[50];
    unsigned long int populacao2;
     double area2;
-    double pib2;
+    float pib2;
     int pontosTuristicos2;
     double densidade2;
     double PIBperCapita2;
     double superPoder2;
    float soma2;
+   int escolhajogador;
+   float resultado;
    
    
    
@@ -99,84 +101,9 @@ int main(){
 
 
 
-    printf("***Comparação das cartas***\n");
-    printf("1. Nome do país\n");
-    printf("2. População\n");
-    printf("3. Àrea\n");
-    printf("4. PIB\n");
-    printf("5. Número de pontos turísticos\n");
-    printf("6. Densidade demográfica\n");
-     printf("Escoha uma opção:\n");
-    scanf("%d", carta1, carta2);
-
-    
-
-    switch (carta1, carta2)
-    {
-    case 1:
-      printf("Digite: Nome do país - ");
-
-      break;
-    
-    case 2:
-      printf("Digite População 1 - ");
-      scanf("%lu", &populacao1);
-      printf("Digite população 2 - ");
-      scanf("%lu", &populacao2);
-      break;
-    
-    case 3:
-      printf("Digite Área 1 - ");
-      scanf("%f", area1);
-      printf("Digite Área 2 - ");
-      scanf("%f", &area2)
-      break;
-    
-    case 4:
-      printf("Digite PIB 1 - ");
-      scanf("%f", &pib1);
-      printf("Digite PIB 2 - ");
-      scanf("%f", &pib2);
-      break;
-    
-    case 5:
-      printf("Digite pontos turísticos 1 - ");
-      scanf("%d", &pontosTuristicos1);
-      printf("Digite pontos Turisticos 2 - ");
-      scanf("%d", &pontosTuristicos2);
-      break;
-    case 6:
-      printf("Digite densidade demográfica 1 - ");
-      scanf("%lf", &densidade1);
-      printf("Digite densidade demográfica 2 - ");
-      scanf("%lf", &densidade2);
-      break; 
-
-       if(carta1, carta2){
-        printf("carta 1 venceu!\n");
-       }
-       else{
-        printf("carta 2 venceu!\n");
-       }
-           
-    
-    default:
-      printf("Opção inválida\n");
-    }
-
-    
-
-       
-   
-   
-    
-   
-
-    
-     
-
-     printf("Digite o Estado: \n");
-    scanf(" %d", &estado2);
+  
+    printf("Digite o Estado: \n");
+    scanf("%c", &estado2);
 
     printf("Digite o Código da Carta: \n");
     scanf("%d", &codigo2);
@@ -189,7 +116,7 @@ int main(){
     scanf("%lu", &populacao2);
      
     printf("Digite o pib: \n");
-    scanf(" %lf", &pib2);
+    scanf(" %f", &pib2);
 
     printf("Digite a área: \n");
     scanf(" %lf", &area2);
@@ -233,13 +160,87 @@ int main(){
     
 
 
-    printf("Estado: %c\n",estado2);
+    printf("Estado2: %c\n", estado2);
     printf("Nome da Cidade: %s\n", nomeCidade2);
     printf("Código: %d\n", codigo2);
     printf("População: %lu\n", populacao2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Área: %.2f km²\n", area2);
     printf("Números de pontos turísticos: %d\n", pontosTuristicos2); 
+
+
+
+
+
+     printf("***Comparação das cartas***\n");
+    printf("1. Nome do país\n");
+    printf("2. População\n");
+    printf("3. Àrea\n");
+    printf("4. PIB\n");
+    printf("5. Número de pontos turísticos\n");
+    printf("6. Densidade demográfica\n");
+     printf("Escoha uma opção:\n");
+    scanf("%d", &escolhajogador);
+
+    
+
+    switch (escolhajogador)
+    {
+    case 1:
+      printf("Digite: Nome do país - ");
+
+      break;
+    
+    case 2:
+      printf("Digite População 1 - ");
+      scanf("%lu", &populacao1);
+      printf("Digite população 2 - ");
+      scanf("%lu", &populacao2);
+      break;
+    
+    case 3:
+      printf("Digite Área 1 - ");
+      scanf("%lf", &area1);
+      printf("Digite Área 2 - ");
+      scanf("%lf", &area2);
+      break;
+    
+    case 4:
+      printf("Digite PIB 1 - ");
+      scanf("%lf", &pib1);
+      printf("Digite PIB 2 - ");
+      scanf("%f", &pib2);
+      break;
+    
+    case 5:
+      printf("Digite pontos turísticos 1 - ");
+      scanf("%d", &pontosTuristicos1);
+      printf("Digite pontos Turisticos 2 - ");
+      scanf("%d", &pontosTuristicos2);
+      break;
+    case 6:
+      printf("Digite densidade demográfica 1 - ");
+      scanf("%lf", &densidade1);
+      printf("Digite densidade demográfica 2 - ");
+      scanf("%lf", &densidade2);
+      break; 
+
+       if(carta1, carta2){
+        printf("carta 1 (ceará):\n");
+       }
+       else{
+        printf("carta 2 (Goiás):\n");
+       } if (resultado)
+       {
+        printf("resultado:\n");
+       }
+       
+           
+    
+    default:
+      printf("Opção inválida\n");
+    }
+
     
     
 
