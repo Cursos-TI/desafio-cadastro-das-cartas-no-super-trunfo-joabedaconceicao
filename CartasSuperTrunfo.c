@@ -197,10 +197,7 @@ int main(){
       printf("Digite população 2 - ");
       scanf("%lu", &populacao2);
 
-      printf("Digite Área 1 - ");
-      scanf("%lf", &area1);
-      printf("Digite Área 2 - ");
-      scanf("%lf", &area2);
+     
       break;
     
     case 3:
@@ -230,7 +227,7 @@ int main(){
       scanf("%lf", &densidade2);
       break; 
 
-       if(carta1 > carta2){
+       if(populacao1 > populacao2){
         printf("carta 1: venceu(ceará):\n");
        }
        else{
