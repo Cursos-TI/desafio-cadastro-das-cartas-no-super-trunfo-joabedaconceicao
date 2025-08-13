@@ -2,7 +2,7 @@
 
 int main(){
  
-  char país1[50];
+  
     char estado1[4];
     char codigo1[4];
     char nomeCidade1[50];
@@ -196,6 +196,11 @@ int main(){
       scanf("%lu", &populacao1);
       printf("Digite população 2 - ");
       scanf("%lu", &populacao2);
+
+      printf("Digite Área 1 - ");
+      scanf("%lf", &area1);
+      printf("Digite Área 2 - ");
+      scanf("%lf", &area2);
       break;
     
     case 3:
@@ -225,16 +230,12 @@ int main(){
       scanf("%lf", &densidade2);
       break; 
 
-       if(carta1, carta2){
-        printf("carta 1 (ceará):\n");
+       if(carta1 > carta2){
+        printf("carta 1: venceu(ceará):\n");
        }
        else{
-        printf("carta 2 (Goiás):\n");
-       } if (resultado)
-       {
-        printf("resultado:\n");
+        printf("carta 2: venceu (Goiás):\n");
        }
-       
            
     
     default:
