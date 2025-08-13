@@ -14,7 +14,8 @@ int main(){
     double PIBperCapita1; 
     double superPoder1;
     float soma1;
-    
+     int escolhajogador, resultado;
+   char tipoComparacao;
        
        
 
@@ -89,8 +90,9 @@ int main(){
     double PIBperCapita2;
     double superPoder2;
    float soma2;
-   int escolhajogador;
-   float resultado;
+   int escolhajogador, resultado;
+   char tipoComparacao;
+   
    
    
    
@@ -179,66 +181,46 @@ int main(){
     printf("4. PIB\n");
     printf("5. Número de pontos turísticos\n");
     printf("6. Densidade demográfica\n");
-     printf("Escoha uma opção:\n");
-    scanf("%d", &escolhajogador);
+    
+    
+    printf("escolha a comparação:");
+    scanf("%d", &tipoComparacao;
 
     
 
-    switch (escolhajogador)
-    {
+    switch (escolhajogador) {
+    
     case 1:
-      printf("Digite: Nome do país - ");
+      printf("Digite população 1 - ");
+      printf("Digite população 2 - ");
+      resultado = populacao1 > populacao2 ? 1 : 0;
 
       break;
     
     case 2:
-      printf("Digite População 1 - ");
-      scanf("%lu", &populacao1);
-      printf("Digite população 2 - ");
-      scanf("%lu", &populacao2);
-
+      printf("Digite area 1 - ");
+      printf("Digite area 2 - ");
+      
+      resultado = area1 > area2 ? 1 : 0;
+      
      
       break;
+      
     
-    case 3:
-      printf("Digite Área 1 - ");
-      scanf("%lf", &area1);
-      printf("Digite Área 2 - ");
-      scanf("%lf", &area2);
-      break;
     
-    case 4:
-      printf("Digite PIB 1 - ");
-      scanf("%lf", &pib1);
-      printf("Digite PIB 2 - ");
-      scanf("%f", &pib2);
-      break;
-    
-    case 5:
-      printf("Digite pontos turísticos 1 - ");
-      scanf("%d", &pontosTuristicos1);
-      printf("Digite pontos Turisticos 2 - ");
-      scanf("%d", &pontosTuristicos2);
-      break;
-    case 6:
-      printf("Digite densidade demográfica 1 - ");
-      scanf("%lf", &densidade1);
-      printf("Digite densidade demográfica 2 - ");
-      scanf("%lf", &densidade2);
-      break; 
-
-       if(populacao1 > populacao2){
-        printf("carta 1: venceu(ceará):\n");
+       if(resultado == 1){
+        printf("carta 1 venceu(ceará):\n");
        }
        else{
         printf("carta 2: venceu (Goiás):\n");
-       }
+       } 
+        
            
     
     default:
       printf("Opção inválida\n");
-    }
-
+    
+      }
     
     
 
@@ -246,5 +228,8 @@ int main(){
 return 0;
 
 
-}
 
+
+
+
+}
